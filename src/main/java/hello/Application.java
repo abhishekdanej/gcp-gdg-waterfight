@@ -94,7 +94,7 @@ public class Application {
     	
 //		System.out.println(me + "URL= " + str + ", dir=" + player.direction + ", x=" + player.x + ", y=" + player.y + ", washit=" + player.wasHit + ", score=" + player.score); 
 	}
-    System.out.println("My stats x,y,dir: " + my_x + ", " + my_y + ", " + my_dir);
+    System.out.println("My stats are x,y,dir: " + my_x + ", " + my_y + ", " + my_dir);
     
     boolean canThrow= false;
     
