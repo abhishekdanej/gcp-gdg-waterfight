@@ -141,6 +141,18 @@ public class Application {
     
     String[] commands = new String[]{"F", "R", "L", "T"};
     
+    boolean[] luck = new boolean[] {false, false, false, false, true};
+    int randLuck = new Random().nextInt(5);
+    boolean randomReturn= luck[randLuck];
+    if(randomReturn) {
+    	int i = new Random().nextInt(4);
+    	System.out.println("randomReturn: " + randomReturn + ", random move: " + commands[i]);
+    	return commands[i];    	
+    } else {
+    	
+    	System.out.println("randomReturn: " + randomReturn + ", standard logic.");
+    }
+    
     if(canThrow) {
     	System.out.println("Throw Water");
     	return "T";    	
