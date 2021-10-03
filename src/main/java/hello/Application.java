@@ -141,7 +141,7 @@ public class Application {
     
     String[] commands = new String[]{"F", "R", "L", "T"};
     
-    boolean[] luck = new boolean[] {false, false, false, false, true};
+    boolean[] luck = new boolean[] {false, false, false, false, false, false, true};
     int randLuck = new Random().nextInt(5);
     boolean randomReturn= luck[randLuck];
     if(randomReturn) {
