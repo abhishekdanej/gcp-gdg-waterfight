@@ -145,9 +145,10 @@ public class Application {
     
     
     if(my_washit) {    	
-    	int i = new Random().nextInt(4);
-    	System.out.println("washit true, random action: " + commands[i]);
-    	return commands[i];    	
+    	String[] move_commands = new String[]{"F", "R", "L"};
+    	int i = new Random().nextInt(3);
+    	System.out.println("washit true, random action: " + move_commands[i]);
+    	return move_commands[i];    	
     }
     
     
