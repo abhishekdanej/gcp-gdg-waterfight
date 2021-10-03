@@ -94,7 +94,7 @@ public class Application {
     		weSet.add(player);
     	}
     	
-//		System.out.println(me + "URL= " + str + ", dir=" + player.direction + ", x=" + player.x + ", y=" + player.y + ", washit=" + player.wasHit + ", score=" + player.score); 
+		System.out.println(me + "URL= " + str + ", dir=" + player.direction + ", x=" + player.x + ", y=" + player.y + ", washit=" + player.wasHit + ", score=" + player.score); 
 	}
     System.out.println("My stats are x,y,dir,washit: " + my_x + ", " + my_y + ", " + my_dir + ", " + my_washit);
     
@@ -144,12 +144,12 @@ public class Application {
     String[] commands = new String[]{"F", "R", "L", "T"};
     
     
-    if(my_washit) {    	
-    	String[] move_commands = new String[]{"F", "R", "L"};
-    	int i = new Random().nextInt(3);
-    	System.out.println("washit true, random action: " + move_commands[i]);
-    	return move_commands[i];    	
-    }
+//    if(my_washit) {    	
+//    	String[] move_commands = new String[]{"F", "R", "L"};
+//    	int i = new Random().nextInt(3);
+//    	System.out.println("washit true, random action: " + move_commands[i]);
+//    	return move_commands[i];    	
+//    }
     
     
     
