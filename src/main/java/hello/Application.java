@@ -104,7 +104,7 @@ public class Application {
     	
     	PlayerState player = state.get(str);
     	
-    	if(!str.contains("onap3e75za")) {
+    	if(!str.contains("so6zjyq3bq")) {
 //    		PlayerState player = state.get(str);
     		int x1 = player.x;
     		int y1 = player.y;
