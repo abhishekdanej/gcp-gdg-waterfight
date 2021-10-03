@@ -144,12 +144,12 @@ public class Application {
     String[] commands = new String[]{"F", "R", "L", "T"};
     
     
-//    if(my_washit) {    	
-//    	String[] move_commands = new String[]{"F", "R", "L"};
-//    	int i = new Random().nextInt(3);
-//    	System.out.println("washit true, random action: " + move_commands[i]);
-//    	return move_commands[i];    	
-//    }
+    if(my_washit) {    	
+    	String[] move_commands = new String[]{"F", "R", "L"};
+    	int i = new Random().nextInt(3);
+    	System.out.println("washit true, random action: " + move_commands[i]);
+    	return move_commands[i];    	
+    }
     
     
     
