@@ -67,6 +67,7 @@ public class Application {
     int my_x=0;
     int my_y=0;
     String my_dir="N";
+    boolean my_washit = false;
     
     Set<PlayerState> nsSet = new HashSet<PlayerState>();
     Set<PlayerState> weSet = new HashSet<PlayerState>();
@@ -80,6 +81,7 @@ public class Application {
     		my_x=player.x;
     		my_y=player.y;
     		my_dir=player.direction;
+    		my_washit = player.wasHit;
     		me = "ME->";
     	}
     	
@@ -94,7 +96,7 @@ public class Application {
     	
 //		System.out.println(me + "URL= " + str + ", dir=" + player.direction + ", x=" + player.x + ", y=" + player.y + ", washit=" + player.wasHit + ", score=" + player.score); 
 	}
-    System.out.println("My stats are x,y,dir: " + my_x + ", " + my_y + ", " + my_dir);
+    System.out.println("My stats are x,y,dir,washit: " + my_x + ", " + my_y + ", " + my_dir + ", " + my_washit);
     
     boolean canThrow= false;
     
@@ -140,6 +142,15 @@ public class Application {
     
     
     String[] commands = new String[]{"F", "R", "L", "T"};
+    
+    
+    if(my_washit) {    	
+    	int i = new Random().nextInt(4);
+    	System.out.println("washit true, random action: " + commands[i]);
+    	return commands[i];    	
+    }
+    
+    
     
     boolean[] luck = new boolean[] {false, false, false, false, false, false, true};
     int randLuck = new Random().nextInt(5);
