@@ -77,7 +77,7 @@ public class Application {
     for (String str : state.keySet()) {
     	PlayerState player = state.get(str);
     	String me = "";
-    	if(str.contains("onap3e75za")) {
+    	if(str.contains("so6zjyq3bq")) {
     		my_x=player.x;
     		my_y=player.y;
     		my_dir=player.direction;
